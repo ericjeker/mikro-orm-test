@@ -1,6 +1,6 @@
-import { Entity, ManyToOne, PrimaryKey, Property } from '@mikro-orm/core'
+import { Entity, ManyToOne, PrimaryKey, Property } from '@mikro-orm/core';
 
-@Entity({tableName: 'books'})
+@Entity({ tableName: 'books' })
 export class Book {
   @PrimaryKey()
   id!: number;
@@ -8,7 +8,7 @@ export class Book {
   @Property()
   title!: string;
 
-  constructor(title: string) {
+  constructor (title: string) {
     this.title = title;
   }
 }

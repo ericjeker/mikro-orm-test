@@ -1,8 +1,7 @@
 import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
 
-@Entity({tableName: 'users'})
+@Entity({ tableName: 'users' })
 export class User {
-
   @PrimaryKey()
   id!: number;
 
@@ -17,5 +16,4 @@ export class User {
 
   @Property({ type: 'text' })
   bio = '';
-
 }
