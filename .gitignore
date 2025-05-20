@@ -1,0 +1,7 @@
+my-db-name
+dist
+node_modules
+
+.env
+.env.*
+!.env.example
